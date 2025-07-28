@@ -1,0 +1,270 @@
+(pulse10) linuxprath@ASUS-ROG-STRIX-Z790-A-GAMING:/mnt/e/Pulse/review-trend-analyzer$ python main.py
+🚀 AI Agent for App Review Trend Analysis
+============================================================
+📱 App: Amazon Shopping
+🆔 App ID: com.amazon.mShop.android.shopping
+📅 Date range: 2025-07-26 → 2025-07-27
+🧠 AI Model: OpenAI GPT-3.5-turbo
+🔄 Batch size: 10
+
+📊 STEP 1: Data Collection
+----------------------------------------
+📅 Collecting reviews for 2025-07-26...
+Saved 71 reviews for 2025-07-26
+✅ Saved 71 reviews
+📅 Collecting reviews for 2025-07-27...
+Saved 61 reviews for 2025-07-27
+✅ Saved 61 reviews
+
+📈 Total reviews collected: 132
+
+🤖 STEP 2: AI Analysis & Trend Generation
+----------------------------------------
+This includes:
+  • Text preprocessing & cleaning
+  • AI topic extraction (OpenAI GPT)
+  • Topic deduplication & consolidation
+  • Trend analysis calculation
+
+🤖 Running complete AI pipeline for 2025-07-26 to 2025-07-27
+📅 Processing 2 days of data...
+🔄 Processing 2025-07-26 (1/2)...
+📊 Preprocessed 66 valid reviews from 71 total
+📊 Preprocessed 66 valid reviews from 71 total
+Processing batch 1 (10 reviews) for 2025-07-26...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "e71b9106-9d50-4f44-8ee0-2abf12f99876",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.80
+    },
+    {
+      "review_id": "95a...
+Processing batch 2 (10 reviews) for 2025-07-26...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "875c2972-4fd2-4990-9f92-319aa6ea609d",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "9d2...
+Processing batch 3 (10 reviews) for 2025-07-26...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "c0ed2c32-e88b-4b6a-9138-391c8fff8eb0",
+      "identified_topics": ["App not opening"],
+      "confidence": 0.95
+    },
+    {
+      "review_id": "d5b7...
+Processing batch 4 (10 reviews) for 2025-07-26...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "dfcb3dcf-bea9-4ffb-94da-363d9de38840",
+      "identified_topics": ["App not opening"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "d556...
+Processing batch 5 (10 reviews) for 2025-07-26...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "b5658670-deec-476b-b122-0bf493adc097",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "0cc...
+Processing batch 6 (10 reviews) for 2025-07-26...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "7a2eef9e-31b0-4030-98ba-bd1a888906b8",
+      "identified_topics": ["Late delivery", "App not opening"],
+      "confidence": 0.85
+    },
+    {
+      "...
+Processing batch 7 (6 reviews) for 2025-07-26...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "8ca4293b-da65-416e-895d-fad949dba529",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "84b...
+Completed processing 65 reviews for 2025-07-26
+✅ Analyzed 65 reviews, found 17 unique topics so far
+🔄 Processing 2025-07-27 (2/2)...
+📊 Preprocessed 49 valid reviews from 61 total
+📊 Preprocessed 49 valid reviews from 61 total
+Processing batch 1 (10 reviews) for 2025-07-27...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "4f535885-a49b-4230-9f8f-036b0a210726",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "66b...
+Processing batch 2 (10 reviews) for 2025-07-27...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "4f33238e-4027-40aa-adfa-62693c018c8e",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "ba4...
+Processing batch 3 (10 reviews) for 2025-07-27...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+    {
+      "review_id": "417fd7bd-903a-4efb-aad6-4afebf08f3e4",
+      "review_id": "417fd7bd-903a-4efb-aad6-4afebf08f3e4",
+      "identified_topics": ["Customer service poor"],
+      "confidence": 0.85
+    },
+    {
+    {
+      "review_id":...
+Processing batch 4 (10 reviews) for 2025-07-27...
+Raw LLM Response: {
+Raw LLM Response: {
+  "review_analysis": [
+  "review_analysis": [
+    {
+      "review_id": "edf4e186-b32b-4e99-b584-3502533a07bb",
+      "identified_topics": ["Delivery issue"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "5cd38...
+Processing batch 5 (9 reviews) for 2025-07-27...
+Raw LLM Response: {
+  "review_analysis": [
+    {
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "555...
+Completed processing 49 reviews for 2025-07-27
+✅ Analyzed 49 reviews, found 22 unique topics so far
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "555...
+Completed processing 49 reviews for 2025-07-27
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "555...
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "review_id": "2dbac250-c664-4566-8e0b-5d42022f25cc",
+      "identified_topics": ["General feedback"],
+      "confidence": 0.85
+    },
+    {
+      "review_id": "555...
+Completed processing 49 reviews for 2025-07-27
+✅ Analyzed 49 reviews, found 22 unique topics so far
+
+🔀 Deduplicating 22 topics...
+🔄 Deduplicating 22 topics...
+📋 Created taxonomy with 22 mappings
+📈 Final analysis: 19 canonical topics
+
+📊 STEP 3: Report Generation
+----------------------------------------
+✅ Report saved → output/trend_report_2025-07-26_to_2025-07-27.csv
+✅ Report saved → output/trend_report_2025-07-26_to_2025-07-27.xlsx
+
+📈 RESULTS SUMMARY
+============================================================
+🔥 Top Trending Topics:
+                                    Topic  2025-07-26  2025-07-27
+      Customer Feedback and Order History          27          16
+              Customer Service Experience          10           9
+                      Order history issue           7           5
+     Order history and app feature issues           4           5
+Customer service and order history issues           5           4
+                 Order fulfillment issues           6           3
+                Order and Delivery Issues           3           4
+                           Account Issues           2           2
+  App not opening and order history issue           3           1
+                  Order and Refund Issues           1           3
+
+📊 Analysis Statistics:
+  • Total canonical topics identified: 19
+  • Total topic mentions: 138
+  • Average mentions per topic: 7.3
+  • Date range analyzed: 2 days
+
+✅ Reports generated:
+  📄 CSV: output/trend_report_2025-07-26_to_2025-07-27.csv
+  📊 Excel: output/trend_report_2025-07-26_to_2025-07-27.xlsx
+
+🎯 Pipeline completed successfully!
+💡 The AI agent has processed reviews through the complete pipeline:
+   Data Collection → Preprocessing → AI Analysis → Deduplication → Trending
+(pulse10) linuxprath@ASUS-ROG-STRIX-Z790-A-GAMING:/mnt/e/Pulse/review-trend-analyzer$
+
+
+
+
+
+
+

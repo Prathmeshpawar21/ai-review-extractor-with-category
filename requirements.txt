@@ -1,0 +1,19 @@
+# requirements.txt
+requests
+pandas
+numpy
+openai
+google-play-scraper
+beautifulsoup4
+python-dotenv
+selenium
+schedule
+json5
+
+pydantic
+httpx
+openpyxl
+
+streamlit
+plotly
+altair
