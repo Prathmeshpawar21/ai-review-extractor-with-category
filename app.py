@@ -1,4 +1,4 @@
-# app.py - Streamlit UI for AI Review Trend Analyzer
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -8,7 +8,6 @@ import os
 import json
 from pathlib import Path
 
-# Set page config first
 st.set_page_config(
     page_title="AI Review Trend Analyzer",
     page_icon="🤖",
@@ -16,12 +15,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Import your existing modules
 from config import Config
 from src.data_collector import ReviewDataCollector
 from src.report_generator import TrendReportGenerator
 
-# Custom CSS for better styling
 def load_css():
     st.markdown("""
     <style>
@@ -85,15 +82,13 @@ def load_css():
 def main():
     load_css()
     
-    # Main header
     st.markdown('<h1 class="main-header">🤖 AI Review Trend Analyzer</h1>', unsafe_allow_html=True)
     st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666;">Powered by Agentic AI • Built for Pulsegen Technologies</p>', unsafe_allow_html=True)
     
-    # Sidebar configuration
+  
     with st.sidebar:
         st.header("⚙️ Configuration")
-        
-        # App selection
+       
         app_options = {
             "Amazon Shopping": "com.amazon.mShop.android.shopping",
             "Zomato": "com.application.zomato",
@@ -109,7 +104,7 @@ def main():
         
         app_id = app_options[selected_app]
         
-        # Date selection
+        
         st.subheader("📅 Date Range")
         
         col1, col2 = st.columns(2)
@@ -127,16 +122,16 @@ def main():
                 max_value=datetime.now()
             )
         
-        # Validation
+       
         if start_date > end_date:
-            st.error("❌ Start date must be before end date!")
+            st.error("Start date must be before end date!")
             return
         
-        # Analysis settings
+     
         st.subheader("🔧 Analysis Settings")
         batch_size = st.slider("Batch Size (reviews per LLM call)", 5, 20, 10)
         
-        # API status check
+    
         st.subheader("🔑 API Status")
         config = Config()
         
@@ -209,6 +204,8 @@ def main():
         
     with tab4:
         show_data_tab()
+
+        
 
 def run_analysis(app_name, app_id, start_date, end_date, batch_size):
     """Run the complete analysis pipeline with progress tracking"""

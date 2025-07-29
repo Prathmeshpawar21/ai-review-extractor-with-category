@@ -1,4 +1,4 @@
-# config_streamlit.py - Enhanced config for Streamlit
+
 import os
 from dotenv import load_dotenv
 import streamlit as st
@@ -9,7 +9,6 @@ class StreamlitConfig:
     """Enhanced configuration class for Streamlit app"""
     
     def __init__(self):
-        # API Keys - try session state first, then environment
         self.OPENAI_API_KEY = (
             st.session_state.get('openai_key') or 
             os.getenv('OPENAI_API_KEY')
@@ -74,6 +73,6 @@ class StreamlitConfig:
         app_name = getattr(self, '_app_name', 'Amazon Shopping')
         return self.SUPPORTED_APPS.get(app_name, {}).get('topics', [])
     
-    # Analysis settings
+
     BATCH_SIZE = 10
     DEFAULT_LOOKBACK_DAYS = 30

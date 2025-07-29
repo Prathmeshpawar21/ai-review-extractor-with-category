@@ -1,4 +1,4 @@
-# main.py - Complete AI agent pipeline
+
 from datetime import datetime, timedelta
 from pathlib import Path
 import os
@@ -29,12 +29,11 @@ def main():
     print(f"🧠 AI Model: OpenAI GPT-3.5-turbo")
     print(f"🔄 Batch size: {cfg.BATCH_SIZE}")
     
-    # Create output directory
     Path("output").mkdir(exist_ok=True)
     
-    # ================================================================
-    # STEP 1: DATA COLLECTION
-    # ================================================================
+ 
+    #  DATA COLLECTION
+
     print(f"\n📊 STEP 1: Data Collection")
     print("-" * 40)
     
@@ -58,9 +57,9 @@ def main():
         print("❌ No data collected. Cannot proceed with analysis.")
         return
     
-    # ================================================================
-    # STEP 2: AI ANALYSIS & TREND GENERATION
-    # ================================================================
+
+    # AI ANALYSIS & TREND GENERATION
+
     print(f"\n🤖 STEP 2: AI Analysis & Trend Generation")
     print("-" * 40)
     print("This includes:")
@@ -79,9 +78,7 @@ def main():
         print("  • Date range validity")
         return
     
-    # ================================================================
-    # STEP 3: REPORT GENERATION & SAVE
-    # ================================================================
+    # REPORT GENERATION & SAVE
     print(f"\n📊 STEP 3: Report Generation")
     print("-" * 40)
     
@@ -89,9 +86,9 @@ def main():
     csv_file = generator.save_report(trend_df, start_date, target_date, fmt="csv")
     excel_file = generator.save_report(trend_df, start_date, target_date, fmt="xlsx")
     
-    # ================================================================
-    # STEP 4: RESULTS SUMMARY
-    # ================================================================
+
+    # RESULTS SUMMARY Here
+
     print(f"\n📈 RESULTS SUMMARY")
     print("=" * 60)
     

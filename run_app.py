@@ -1,4 +1,4 @@
-# run_app.py - Launch script for the Streamlit app
+
 import subprocess
 import sys
 import os
@@ -34,15 +34,12 @@ def check_environment():
 def main():
     print("🚀 Starting AI Review Trend Analyzer...")
     
-    # Install requirements
     print("📦 Installing requirements...")
     install_requirements()
     
-    # Check environment
     print("🔧 Checking environment...")
     check_environment()
     
-    # Launch Streamlit app
     print("🌟 Launching Streamlit app...")
     subprocess.run([
         sys.executable, "-m", "streamlit", "run", "app.py",
